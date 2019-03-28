@@ -4,11 +4,128 @@
             {
                 "path": "config/",
                 "name": "dependencias.json"
+            },
+            {
+                "path": "AQNEXT/",
+                "name": "settings.py"
             }
         ],
         "deleteFile": [],
         "patchScript": [],
-        "addFile": [],
+        "addFile": [
+            {
+                "path": "models/fltrainb/",
+                "name": "model_fltrainb__models.py"
+            },
+            {
+                "path": "models/fltrainb/",
+                "name": "model_fltrainb__user.py"
+            },
+            {
+                "path": "models/fltrainb/",
+                "name": "model_fltrainb__project.py"
+            },
+            {
+                "name": "app_trainb__views_trainb.py",
+                "path": "apps/trainb/viewset/"
+            },
+            {
+                "name": "app_trainb__menu_trainb.json",
+                "path": "apps/trainb/templates/trainb/"
+            },
+            {
+                "path": "models/fltrainb/test/",
+                "name": "model_fltrainb__test_user.py"
+            },
+            {
+                "path": "models/fltrainb/test/",
+                "name": "model_fltrainb____init__.py"
+            },
+            {
+                "path": "controllers/api/",
+                "name": "controller_api____init__.py"
+            },
+            {
+                "path": "models/fltrainb/",
+                "name": "model_fltrainb__company.py"
+            },
+            {
+                "path": "controllers/api/trainB/users/",
+                "name": "controller_api_users__get.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__get.py"
+            },
+            {
+                "name": "controller_api_companies__post.py",
+                "path": "controllers/api/trainB/companies/"
+            },
+            {
+                "name": "controller_api_companies__get.py",
+                "path": "controllers/api/trainB/companies/"
+            },
+            {
+                "name": "controller_api_users__post.py",
+                "path": "controllers/api/trainB/users/"
+            },
+            {
+                "name": "model_fltrainb__address.py",
+                "path": "models/fltrainb/"
+            },
+            {
+                "name": "controller_api_users__user_serializer.py",
+                "path": "controllers/api/trainB/users/serializers/"
+            },
+            {
+                "name": "controller_api_companies__company_serializer.py",
+                "path": "controllers/api/trainB/companies/serializers/"
+            },
+            {
+                "name": "controller_api_companies__address_serializer.py",
+                "path": "controllers/api/trainB/companies/serializers/"
+            },
+            {
+                "name": "model_fltrainb__leader.py",
+                "path": "models/fltrainb/"
+            },
+            {
+                "name": "model_fltrainb__consultant.py",
+                "path": "models/fltrainb/"
+            },
+            {
+                "name": "model_fltrainb__improvement.py",
+                "path": "models/fltrainb/"
+            },
+            {
+                "path": "controllers/api/trainB/users/",
+                "name": "controller_api_users__leader.py"
+            },
+            {
+                "path": "controllers/api/trainB/users/",
+                "name": "controller_api_users__consultant.py"
+            },
+            {
+                "path": "controllers/api/trainB/users/",
+                "name": "controller_api_users__getConsultant.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__post.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/serializers/",
+                "name": "controller_api_projects__project_serializer.py"
+            },
+            {
+                "name": "controller_api_users__consultant_serializer.py",
+                "path": "controllers/api/trainB/users/serializers/"
+            },
+            {
+                "name": "controller_api_users__project_serializer.py",
+                "path": "controllers/api/trainB/users/serializers/"
+            }
+        ],
         "patchJson": [
             {
                 "path": "config/",
@@ -17,6 +134,10 @@
             {
                 "path": "config/",
                 "name": "registros.json"
+            },
+            {
+                "name": "app_portal__menu_portal.json",
+                "path": "apps/portal/templates/portal/"
             }
         ]
     },

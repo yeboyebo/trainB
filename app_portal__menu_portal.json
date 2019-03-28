@@ -1,0 +1,15 @@
+{
+    "modifications": [
+        {
+            "type": "insertAfterItem",
+            "path": "/items[root]",
+            "value": {
+                "NAME": "trainb",
+                "TEXT": "trainb",
+                "ICON": "train",
+                "URL": "trainb",
+                "COLOR": "rgb(215, 30, 30)"
+            }
+        }
+    ]
+}

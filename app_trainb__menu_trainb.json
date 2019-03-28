@@ -1,0 +1,11 @@
+{
+    "items": [
+        {
+            "NAME": "usuarios",
+            "TEXT": "usuarios",
+            "URL": "trainb/user/master",
+            "ICON": "settings",
+            "COLOR": "rgb(0, 0, 0)"
+        }
+    ]
+}

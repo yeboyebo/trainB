@@ -1,3 +1,32 @@
 {
-    "modifications": []
+    "modifications": [
+        {
+            "type": "insertAfterNode",
+            "path": "/portal",
+            "value": {
+                "trainb": {}
+            }
+        },
+        {
+            "type": "insertAfterNode",
+            "path": "/trainb",
+            "value": {
+                "api": {
+                    "controller": true
+                }
+            }
+        },
+        {
+            "type": "insertAfterNode",
+            "path": "/models/root",
+            "value": {
+                "fltrainb": {
+                    "user": null,
+                    "company": null,
+                    "address": null,
+                    "project": null
+                }
+            }
+        }
+    ]
 }
