@@ -4,6 +4,10 @@
         {
             "key": "baseparche",
             "version": "v1.0"
+        },
+        {
+            "version": "v1.0",
+            "key": "yblogin"
         }
     ],
     "fk": "True"
