@@ -124,6 +124,82 @@
             {
                 "name": "controller_api_users__project_serializer.py",
                 "path": "controllers/api/trainB/users/serializers/"
+            },
+            {
+                "name": "model_fltrainb__problem.py",
+                "path": "models/fltrainb/"
+            },
+            {
+                "path": "controllers/api/trainB/improvements/",
+                "name": "controller_api_improvements__post.py"
+            },
+            {
+                "path": "controllers/api/trainB/improvements/",
+                "name": "controller_api_improvements__get.py"
+            },
+            {
+                "path": "controllers/api/trainB/improvements/serializers/",
+                "name": "controller_api_improvements__improvment_serializer.py"
+            },
+            {
+                "path": "models/fltrainb/",
+                "name": "model_fltrainb__action.py"
+            },
+            {
+                "path": "controllers/api/trainB/improvements/serializers/",
+                "name": "controller_api_improvements__improvement_serializer.py"
+            },
+            {
+                "path": "models/fltrainb/",
+                "name": "model_fltrainb__sprint.py"
+            },
+            {
+                "path": "models/fltrainb/",
+                "name": "model_fltrainb__task.py"
+            },
+            {
+                "path": "models/fltrainb/",
+                "name": "model_fltrainb__comment.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__getSprints.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/serializers/",
+                "name": "controller_api_projects__sprint_serializer.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/serializers/",
+                "name": "controller_api_projects__task_serializer.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__getImprovements.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__postImprovements.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__postSprints.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__postTasks.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__postComments.py"
+            },
+            {
+                "path": "controllers/api/trainB/projects/",
+                "name": "controller_api_projects__getTasks.py"
+            },
+            {
+                "path": "controllers/api/trainB/users/serializers/",
+                "name": "controller_api_users__user_short_serializer.py"
             }
         ],
         "patchJson": [

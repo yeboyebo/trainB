@@ -17,6 +17,8 @@ class trainB_get(interna_get):
         if  'iduser' in data:
             user = User().load(data)
             result = serializador.serialize(user)
+        elif pk:
+            result = serializador.serialize(User().load({'iduser':pk}))
         else:
             users = User().get_collection()
             result = []

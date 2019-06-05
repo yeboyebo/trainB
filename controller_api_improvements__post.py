@@ -1,6 +1,7 @@
 from django.core import serializers
-from models.fltrainb.project import project as Project
-import json
+from models.fltrainb.improvement import improvement as Improvement
+from django.db import transaction
+
 
 class interna_post():
     pass
@@ -11,14 +12,15 @@ class trainB_post(interna_post):
 
     @staticmethod
     def start(pk, data):
-        if  'consultant' in data:
+        if  'project' in data:
+            sid = transaction.savepoint()
             try:
-                if "idproject" in data:
-                    Project().load({"idproject":data["idproject"]}).update(data)
-                else:
-                    Project().create(data)
+                transaction.savepoint_rollback(sid)
+                Improvement().create(data)
                 result = {'result':'ok'}
+                transaction.savepoint_commit(sid)
             except Exception as e:
+                transaction.savepoint_rollback(sid)
                 result = {'result':'error', 'error': str(e)}
         else:
             result = {'result':'error', 'error': 'Datos insuficientes'}

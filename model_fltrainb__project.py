@@ -25,15 +25,14 @@ class trainb_project(interna_project):
         verbose_name=FLUtil.translate(u"Nombre", u"MetaData"),
         blank=False,
         null=False,
-        max_length=100
+        max_length=200
     )
 
-    description = baseraw.CharField(
+    description = baseraw.TextField(
         db_column="description",
         verbose_name=FLUtil.translate(u"Descripcion", u"MetaData"),
         blank=False,
         null=True,
-        max_length=150
     )
 
     budget = baseraw.CharField(
@@ -74,7 +73,7 @@ class trainb_project(interna_project):
         null=False,
         max_length=30,
         to_field="idleader",
-        on_delete=baseraw.CASCADE,
+        on_delete=baseraw.PROTECT,
         related_name="project_leader__fk__leader_idleader"
     )
 
@@ -86,7 +85,7 @@ class trainb_project(interna_project):
         null=False,
         max_length=30,
         to_field="idconsultant",
-        on_delete=baseraw.CASCADE,
+        on_delete=baseraw.PROTECT,
         related_name="projects"
     )
 
@@ -94,6 +93,11 @@ class trainb_project(interna_project):
         data['leader'] = Leader().load(data['leader'])
         data['consultant'] = Consultant().load(data['consultant'])
         return super().create(data)
+
+    def update(self, data):
+        data['leader'] = Leader().load(data['leader'])
+        data['consultant'] = Consultant().load(data['consultant'])
+        return super().update(data)
 
     class Meta:
         abstract = True

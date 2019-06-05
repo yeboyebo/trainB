@@ -24,10 +24,6 @@ class trainb_consultant(interna_consultant):
         visiblegrid=False,
     )
 
-    # projects = []
-
-    # def __init__(self):
-    #    self.projects = project.objects.get(idconsultant=self.idconsultant)
 
     def get_projects(self):
         return self.projects.all()

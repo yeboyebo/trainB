@@ -4,3 +4,9 @@ from models.fltrainb.project import project
 from models.fltrainb.address import address
 from models.fltrainb.leader import leader
 from models.fltrainb.consultant import consultant
+from models.fltrainb.improvement import improvement
+from models.fltrainb.problem import problem
+from models.fltrainb.action import action
+from models.fltrainb.sprint import sprint
+from models.fltrainb.task import task
+from models.fltrainb.comment import comment

@@ -11,11 +11,14 @@ class trainB_post(interna_post):
 
     @staticmethod
     def start(pk, data):
-        
+
        # print(data.__name__)
         if  'email' in data:
             try:
-                User().create(data)
+                if "iduser" in data:
+                     User().load({"iduser":data['iduser']}).update(data)
+                else:
+                    User().create(data)
                 result = '{"result":"ok"}'
             except  Exception as e:
                 result = '{"result":"error en los datos"}'

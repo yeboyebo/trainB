@@ -1,22 +1,22 @@
 from django.core import serializers
-from models.fltrainb.project import project as Project
+from models.fltrainb.task import task as Task
 import json
 
-class interna_post():
+class interna_postTasks():
     pass
 
 
 # @class_declaration trainB_post #
-class trainB_post(interna_post):
+class trainB_postTasks(interna_postTasks):
 
     @staticmethod
     def start(pk, data):
-        if  'consultant' in data:
+        if  'sprint' in data:
             try:
-                if "idproject" in data:
-                    Project().load({"idproject":data["idproject"]}).update(data)
+                if 'idtask' in data:
+                    Task().load({"idtask":data['idtask']}).update(data)
                 else:
-                    Project().create(data)
+                    Task().create(data)
                 result = {'result':'ok'}
             except Exception as e:
                 result = {'result':'error', 'error': str(e)}
@@ -26,5 +26,5 @@ class trainB_post(interna_post):
 
 
 # @class_declaration post #
-class post(trainB_post):
+class postTasks(trainB_postTasks):
     pass

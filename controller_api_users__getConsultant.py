@@ -17,6 +17,8 @@ class trainB_getConsultant(interna_getConsultant):
         if  'idconsultant' in data:
             user = Consultant().load(data)
             result = serializador.serialize(user)
+        elif pk:
+            result = serializador.serialize(Consultant().load({'idconsultant':pk}))
         else:
             users = Consultant().get_collection()
             result = []

@@ -11,16 +11,16 @@ class trainB_projectSerializer(interna_projectSerializer):
     @staticmethod
     def serialize(projects):
         user = UserSerializer()
-        data = OrderedDict()
+        data = []
 
         for project in projects:
-            data.update({
+            data.append(OrderedDict({
                 'name': project.get_data('name'),
                 'description': project.get_data('description'),
                 'budget': project.get_data('budget'),
                 'cost': project.get_data('cost'),
                 'leader':project.get_data('leader').get_name()
-            })
+            }))
 
         return data
 
