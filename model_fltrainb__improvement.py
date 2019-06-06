@@ -19,6 +19,10 @@ class trainb_improvement(interna_improvement):
         db_column="idimprovement",
         verbose_name=FLUtil.translate(u"Identificador", u"MetaData"),
         primary_key=True
+    )._miextend(
+        REQUIRED=True,
+        OLDTIPO="SERIAL",
+        visiblegrid=False,
     )
     objective = baseraw.TextField(
         db_column="objective",
@@ -48,7 +52,7 @@ class trainb_improvement(interna_improvement):
         default="Propuesta",
         max_length=30
     )._miextend(
-         optionslist=u",Propuesta,Rechazada,Pendiente,En ejecución,En ejecución En medicion, En medicion finalizando, Finalizado",
+        optionslist=u",Propuesta,Rechazada,Pendiente,En ejecución,En ejecución En medicion, En medicion finalizando, Finalizado",
         OLDTIPO="STRING"
     )
     project = baseraw.ForeignKey(
@@ -60,6 +64,8 @@ class trainb_improvement(interna_improvement):
         to_field="idproject",
         on_delete=baseraw.PROTECT,
         related_name="project"
+    )._miextend(
+        OLDTIPO="SERIAL"
     )
 
     def create(self, data):

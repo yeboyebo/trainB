@@ -18,14 +18,19 @@ class trainb_project(interna_project):
         db_column="idproject",
         verbose_name=FLUtil.translate(u"Identificador", u"MetaData"),
         primary_key=True
+    )._miextend(
+        REQUIRED=True,
+        OLDTIPO="SERIAL",
+        visiblegrid=False,
     )
-
     name = baseraw.CharField(
         db_column="name",
         verbose_name=FLUtil.translate(u"Nombre", u"MetaData"),
         blank=False,
         null=False,
         max_length=200
+    )._miextend(
+        OLDTIPO="STRING"
     )
 
     description = baseraw.TextField(
@@ -33,6 +38,8 @@ class trainb_project(interna_project):
         verbose_name=FLUtil.translate(u"Descripcion", u"MetaData"),
         blank=False,
         null=True,
+    )._miextend(
+        OLDTIPO="STRING"
     )
 
     budget = baseraw.CharField(
@@ -41,6 +48,8 @@ class trainb_project(interna_project):
         blank=False,
         null=True,
         max_length=12
+    )._miextend(
+        OLDTIPO="STRING"
     )
 
     cost = baseraw.CharField(
@@ -49,6 +58,8 @@ class trainb_project(interna_project):
         blank=False,
         null=True,
         max_length=12
+    )._miextend(
+        OLDTIPO="STRING"
     )
 
     start_date = baseraw.DateField(
@@ -56,6 +67,8 @@ class trainb_project(interna_project):
         verbose_name=FLUtil.translate(u"Fecha de comienzo", u"MetaData"),
         blank=True,
         null=True
+    )._miextend(
+        OLDTIPO="DATE"
     )
 
     finish_date = baseraw.DateField(
@@ -63,6 +76,8 @@ class trainb_project(interna_project):
         verbose_name=FLUtil.translate(u"Fecha de finalización", u"MetaData"),
         blank=True,
         null=True
+    )._miextend(
+        OLDTIPO="DATE"
     )
 
     leader = baseraw.ForeignKey(
@@ -75,6 +90,8 @@ class trainb_project(interna_project):
         to_field="idleader",
         on_delete=baseraw.PROTECT,
         related_name="project_leader__fk__leader_idleader"
+    )._miextend(
+        OLDTIPO="SERIAL"
     )
 
     consultant = baseraw.ForeignKey(
@@ -87,6 +104,8 @@ class trainb_project(interna_project):
         to_field="idconsultant",
         on_delete=baseraw.PROTECT,
         related_name="projects"
+    )._miextend(
+        OLDTIPO="SERIAL"
     )
 
     def create(self, data):

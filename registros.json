@@ -5,7 +5,14 @@
             "path": "/root",
             "value": {
                 "fltrainb": {
-                    "user": null
+                    "user": null,
+                    "company": null,
+                    "address": null,
+                    "project": null,
+                    "task": null,
+                    "improvement": null,
+                    "sprint": null,
+                    "problem": null
                 }
             }
         }

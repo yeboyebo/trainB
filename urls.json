@@ -24,7 +24,13 @@
                     "user": null,
                     "company": null,
                     "address": null,
-                    "project": null
+                    "project": null,
+                    "task": null,
+                    "improvement": null,
+                    "sprint": null,
+                    "problem": null,
+                    "leader": null,
+                    "consultant": null
                 }
             }
         }

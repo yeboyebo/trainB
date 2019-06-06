@@ -18,6 +18,10 @@ class trainb_task(interna_task):
         db_column="idtask",
         verbose_name=FLUtil.translate(u"Identificador", u"MetaData"),
         primary_key=True
+    )._miextend(
+        REQUIRED=True,
+        OLDTIPO="SERIAL",
+        visiblegrid=False,
     )
     name = baseraw.CharField(
         db_column="name",
@@ -25,12 +29,16 @@ class trainb_task(interna_task):
         blank=False,
         null=False,
         max_length=200
+    )._miextend(
+        OLDTIPO="STRING"
     )
     description = baseraw.TextField(
         db_column="description",
         verbose_name=FLUtil.translate(u"Descripcion", u"MetaData"),
         blank=False,
         null=True,
+    )._miextend(
+        OLDTIPO="STRING"
     )
     cost = baseraw.CharField(
         db_column="cost",
@@ -39,12 +47,16 @@ class trainb_task(interna_task):
         null=True,
         max_length=12,
         default=0
+    )._miextend(
+        OLDTIPO="STRING"
     )
     finish_date = baseraw.DateField(
         db_column="finish_date",
         verbose_name=FLUtil.translate(u"Fecha de comienzo", u"MetaData"),
         blank=True,
         null=True
+    )._miextend(
+        OLDTIPO="DATE"
     )
     order = baseraw.IntegerField(
         db_column="order",
@@ -52,6 +64,8 @@ class trainb_task(interna_task):
         blank=False,
         null=False,
         default=0
+    )._miextend(
+        OLDTIPO="STRING"
     )
     sprint = baseraw.ForeignKey(
         "sprint",
@@ -63,6 +77,8 @@ class trainb_task(interna_task):
         to_field="idsprint",
         on_delete=baseraw.PROTECT,
         related_name="tasks"
+    )._miextend(
+        OLDTIPO="SERIAL"
     )
     responsable = baseraw.ForeignKey(
         "user",
@@ -74,6 +90,8 @@ class trainb_task(interna_task):
         to_field="iduser",
         on_delete=baseraw.PROTECT,
         related_name="responsable"
+    )._miextend(
+        OLDTIPO="SERIAL"
     )
 
     def create(self, data):

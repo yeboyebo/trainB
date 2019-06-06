@@ -2,9 +2,44 @@
     "format":"navBarMenu",
     "items": [
         {
+            "NAME": "mejoras",
+            "TEXT": "Mejoras",
+            "URL": "trainb/improvement/master",
+            "ICON": "settings",
+            "COLOR": "rgb(0, 0, 0)"
+        },
+        {
             "NAME": "usuarios",
             "TEXT": "usuarios",
             "URL": "trainb/user/master",
+            "ICON": "settings",
+            "COLOR": "rgb(0, 0, 0)"
+        },
+        {
+            "NAME": "empresas",
+            "TEXT": "Empresas",
+            "URL": "trainb/company/master",
+            "ICON": "settings",
+            "COLOR": "rgb(0, 0, 0)"
+        },
+        {
+            "NAME": "proyectos",
+            "TEXT": "Projects",
+            "URL": "trainb/project/master",
+            "ICON": "settings",
+            "COLOR": "rgb(0, 0, 0)"
+        },
+        {
+            "NAME": "sprints",
+            "TEXT": "Sprints",
+            "URL": "trainb/sprint/master",
+            "ICON": "settings",
+            "COLOR": "rgb(0, 0, 0)"
+        },
+        {
+            "NAME": "tareas",
+            "TEXT": "Tareas",
+            "URL": "trainb/task/master",
             "ICON": "settings",
             "COLOR": "rgb(0, 0, 0)"
         }

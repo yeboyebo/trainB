@@ -20,12 +20,18 @@ class trainb_sprint(interna_sprint):
         db_column="idsprint",
         verbose_name=FLUtil.translate(u"Identificador", u"MetaData"),
         primary_key=True
+    )._miextend(
+        REQUIRED=True,
+        OLDTIPO="SERIAL",
+        visiblegrid=False,
     )
     objective = baseraw.TextField(
         db_column="objective",
         verbose_name=FLUtil.translate(u"Definición de hecho", u"MetaData"),
         blank=True,
         null=True
+    )._miextend(
+        OLDTIPO="STRING"
     )
     cost = baseraw.FloatField(
         db_column="cost",
@@ -33,18 +39,24 @@ class trainb_sprint(interna_sprint):
         blank=True,
         null=True,
         default=None
+    )._miextend(
+        OLDTIPO="STRING"
     )
     start_date = baseraw.DateField(
         db_column="start_date",
         verbose_name=FLUtil.translate(u"Fecha de inicio", u"MetaData"),
         blank=True,
         null=True
+    )._miextend(
+        OLDTIPO="DATE"
     )
     finish_date = baseraw.DateField(
         db_column="finish_date",
         verbose_name=FLUtil.translate(u"Fecha de fin", u"MetaData"),
         blank=True,
         null=True
+    )._miextend(
+        OLDTIPO="DATE"
     )
     state = baseraw.CharField(
         db_column="state",
@@ -66,6 +78,8 @@ class trainb_sprint(interna_sprint):
         to_field="idproject",
         on_delete=baseraw.PROTECT,
         related_name="sprints"
+    )._miextend(
+            OLDTIPO="SERIAL"
     )
     improvement = baseraw.ForeignKey(
         "improvement",
@@ -76,6 +90,8 @@ class trainb_sprint(interna_sprint):
         to_field="idimprovement",
         on_delete=baseraw.PROTECT,
         related_name="improvements"
+    )._miextend(
+            OLDTIPO="SERIAL"
     )
     action = baseraw.ForeignKey(
         "action",
@@ -86,6 +102,8 @@ class trainb_sprint(interna_sprint):
         to_field="idaction",
         on_delete=baseraw.PROTECT,
         related_name="actions"
+    )._miextend(
+            OLDTIPO="SERIAL"
     )
     users = baseraw.ManyToManyField(User)
 

@@ -200,6 +200,14 @@
             {
                 "path": "controllers/api/trainB/users/serializers/",
                 "name": "controller_api_users__user_short_serializer.py"
+            },
+            {
+                "name": "model_fltrainb__leader_def.py",
+                "path": "models/fltrainb/"
+            },
+            {
+                "name": "model_fltrainb__consultant_def.py",
+                "path": "models/fltrainb/"
             }
         ],
         "patchJson": [

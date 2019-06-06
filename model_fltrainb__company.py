@@ -70,7 +70,7 @@ class trainb_company(interna_company):
         on_delete=baseraw.CASCADE,
         related_name="company_address__fk__address_idaddress"
     )._miextend(
-            OLDTIPO="SERIAL"
+        OLDTIPO="SERIAL"
     )
 
     def getName(self):
