@@ -43,7 +43,7 @@
             },
             {
                 "path": "controllers/api/",
-                "name": "controller_api____init__.py"
+                "name": "ctrl_api____init__.py"
             },
             {
                 "path": "models/fltrainb/",
@@ -51,22 +51,22 @@
             },
             {
                 "path": "controllers/api/trainB/users/",
-                "name": "controller_api_users__get.py"
+                "name": "ctrl_api_trainB_users__get.py"
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__get.py"
+                "name": "ctrl_api_trainB_projects__get.py"
             },
             {
-                "name": "controller_api_companies__post.py",
+                "name": "ctrl_api_trainB_companies__post.py",
                 "path": "controllers/api/trainB/companies/"
             },
             {
-                "name": "controller_api_companies__get.py",
+                "name": "ctrl_api_trainB_companies__get.py",
                 "path": "controllers/api/trainB/companies/"
             },
             {
-                "name": "controller_api_users__post.py",
+                "name": "ctrl_api_trainB_users__post.py",
                 "path": "controllers/api/trainB/users/"
             },
             {
@@ -74,15 +74,15 @@
                 "path": "models/fltrainb/"
             },
             {
-                "name": "controller_api_users__user_serializer.py",
+                "name": "ctrl_api_trainB_users__user_serializer.py",
                 "path": "controllers/api/trainB/users/serializers/"
             },
             {
-                "name": "controller_api_companies__company_serializer.py",
+                "name": "ctrl_api_trainB_companies__company_serializer.py",
                 "path": "controllers/api/trainB/companies/serializers/"
             },
             {
-                "name": "controller_api_companies__address_serializer.py",
+                "name": "ctrl_api_trainB_companies__address_serializer.py",
                 "path": "controllers/api/trainB/companies/serializers/"
             },
             {
@@ -99,30 +99,30 @@
             },
             {
                 "path": "controllers/api/trainB/users/",
-                "name": "controller_api_users__leader.py"
+                "name": "ctrl_api_trainB_users__leader.py"
             },
             {
                 "path": "controllers/api/trainB/users/",
-                "name": "controller_api_users__consultant.py"
+                "name": "ctrl_api_trainB_users__consultant.py"
             },
             {
                 "path": "controllers/api/trainB/users/",
-                "name": "controller_api_users__getConsultant.py"
+                "name": "ctrl_api_trainB_users__getConsultant.py"
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__post.py"
+                "name": "ctrl_api_trainB_projects__post.py"
             },
             {
                 "path": "controllers/api/trainB/projects/serializers/",
-                "name": "controller_api_projects__project_serializer.py"
+                "name": "ctrl_api_trainB_projects__project_serializer.py"
             },
             {
-                "name": "controller_api_users__consultant_serializer.py",
+                "name": "ctrl_api_trainB_users__consultant_serializer.py",
                 "path": "controllers/api/trainB/users/serializers/"
             },
             {
-                "name": "controller_api_users__project_serializer.py",
+                "name": "ctrl_api_trainB_users__project_serializer.py",
                 "path": "controllers/api/trainB/users/serializers/"
             },
             {
@@ -131,15 +131,15 @@
             },
             {
                 "path": "controllers/api/trainB/improvements/",
-                "name": "controller_api_improvements__post.py"
+                "name": "ctrl_api_trainB_improvements__post.py"
             },
             {
                 "path": "controllers/api/trainB/improvements/",
-                "name": "controller_api_improvements__get.py"
+                "name": "ctrl_api_trainB_improvements__get.py"
             },
             {
                 "path": "controllers/api/trainB/improvements/serializers/",
-                "name": "controller_api_improvements__improvment_serializer.py"
+                "name": "ctrl_api_trainB_improvements__improvment_serializer.py"
             },
             {
                 "path": "models/fltrainb/",
@@ -147,7 +147,7 @@
             },
             {
                 "path": "controllers/api/trainB/improvements/serializers/",
-                "name": "controller_api_improvements__improvement_serializer.py"
+                "name": "ctrl_api_trainB_improvements__improvement_serializer.py"
             },
             {
                 "path": "models/fltrainb/",
@@ -163,51 +163,43 @@
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__getSprints.py"
+                "name": "ctrl_api_trainB_projects__getSprints.py"
             },
             {
                 "path": "controllers/api/trainB/projects/serializers/",
-                "name": "controller_api_projects__sprint_serializer.py"
+                "name": "ctrl_api_trainB_projects__sprint_serializer.py"
             },
             {
                 "path": "controllers/api/trainB/projects/serializers/",
-                "name": "controller_api_projects__task_serializer.py"
+                "name": "ctrl_api_trainB_projects__task_serializer.py"
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__getImprovements.py"
+                "name": "ctrl_api_trainB_projects__getImprovements.py"
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__postImprovements.py"
+                "name": "ctrl_api_trainB_projects__postImprovements.py"
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__postSprints.py"
+                "name": "ctrl_api_trainB_projects__postSprints.py"
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__postTasks.py"
+                "name": "ctrl_api_trainB_projects__postTasks.py"
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__postComments.py"
+                "name": "ctrl_api_trainB_projects__postComments.py"
             },
             {
                 "path": "controllers/api/trainB/projects/",
-                "name": "controller_api_projects__getTasks.py"
+                "name": "ctrl_api_trainB_projects__getTasks.py"
             },
             {
                 "path": "controllers/api/trainB/users/serializers/",
-                "name": "controller_api_users__user_short_serializer.py"
-            },
-            {
-                "name": "model_fltrainb__leader_def.py",
-                "path": "models/fltrainb/"
-            },
-            {
-                "name": "model_fltrainb__consultant_def.py",
-                "path": "models/fltrainb/"
+                "name": "ctrl_api_trainB_users__user_short_serializer.py"
             }
         ],
         "patchJson": [
